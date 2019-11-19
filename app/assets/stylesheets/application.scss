@@ -28,7 +28,7 @@ body {
     border: none;
     color: $dark;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 4px;
 
     &:hover {
         color: $dark;
@@ -42,7 +42,7 @@ body {
     font-weight: bold;
     border: 2px solid $primary;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 4px;
 
     &:hover {
         background-color: $primary;
@@ -79,7 +79,7 @@ p {
 }
 
 h4 {
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .meteorite-h1 {
@@ -128,6 +128,7 @@ h4 {
 }
 
 .login-surface {
+    padding: 5%;
     background-color: $background-color;
     max-width: 710px;
     height: auto;
@@ -137,4 +138,60 @@ h4 {
 
 .bg-main {
     background-color: $primary-color-light;
+}
+
+.form-control {
+    border-color: $dark;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: $background-color;
+    color: $dark;
+
+    &:focus {
+        border-color: $dark;
+        border-width: 1px;
+        border-radius: 5px;
+        background-color: $background-color;
+        color: $dark;
+        box-shadow: none;
+    }
+}
+
+label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: $dark;
+}
+
+.accent-label {
+    color: $gray-light;
+}
+
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+    color: $very-light-gray !important;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.text-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: $gray-light;
+
+    &:hover {
+        color: $gray-light;
+    }
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    min-width: 120;
+    min-height: 40;
 }
