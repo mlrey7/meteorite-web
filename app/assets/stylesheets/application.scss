@@ -1,0 +1,140 @@
+@import "_custom";
+@import "bootstrap";
+
+html,
+body {
+    height: 100%;
+}
+
+.placeholder-img {
+    background-color: $primary;
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.container-fill {
+    //text-align: center;
+    width: 100%;
+}
+
+.navbar-light {
+    background-color: $primary-color-3;
+}
+
+.btn-primary {
+    font-weight: bold;
+    background-color: $primary;
+    border: none;
+    color: $dark;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    &:hover {
+        color: $dark;
+        background-color: $primary;
+        border: none;
+    }
+}
+
+.btn-outline-primary {
+    color: $dark;
+    font-weight: bold;
+    border: 2px solid $primary;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: $primary;
+        color: $dark;
+        font-weight: bold;
+        border: 2px solid $primary;
+    }
+}
+
+.nav-item .btn {
+    border-radius: 4px;
+}
+
+.banner-image {
+    width: 370.78px;
+    height: 350px;
+    left: 183px;
+    top: 226px;
+}
+
+.gradient-bg {
+    background: linear-gradient(90deg, #FF837C 0%, #FECEA8 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    color: $dark;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+.meteorite-h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#tagline {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#byline {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-light .navbar-text a {
+    color: $dark;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav {
+    .nav-link {
+        color: $dark;
+    }
+}
+
+.meteorite-nav-item {
+    color: $dark;
+}
+
+.login-surface {
+    background-color: $background-color;
+    max-width: 710px;
+    height: auto;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.bg-main {
+    background-color: $primary-color-light;
+}
