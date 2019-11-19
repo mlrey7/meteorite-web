@@ -1,0 +1,13 @@
+<li id="micropost-<%= micropost.id %>">
+    <div class="media">
+        <%= image_tag "logo_stripped.png", class: "micropost-img"%>
+        <div class="media-body ml-3">
+            <div class="d-inline-flex">
+                <h5 class="micropost-name pr-1"><%= micropost.user.name%></h5>
+                <h5 class="micropost-handle pr-1"><%="@#{micropost.user.handle}"%></h5>
+                <h5 class="micropost-timestamp"><%= time_ago_in_words(micropost.created_at) %></h5>
+            </div>
+            <p class="micropost-content"><%= micropost.content %></p>
+        </div>
+    </div>
+</li>

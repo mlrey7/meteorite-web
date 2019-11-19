@@ -1,6 +1,6 @@
 <div class="container-fluid bg-main h-100">
   <div class="row">
-    <div class="col-md-4 offset-md-1">
+    <div class="col-md-3 offset-md-1">
       <div class="login-surface mt-3">
         <div class="row">
             <div class="col-3">
@@ -8,9 +8,22 @@
             </div>
             <div class="col-9">
                 <h4><%= @user.name%></h4>
+                  <span><%= @user.microposts.length%></span>
+                  <span>posts</span>
             </div>
         </div>
       </div>
+    </div>
+        <div class="col-md-6 offset-md-2">
+          <div class="login-surface mt-3">
+            <% if @user.microposts.any? %>
+              <h4>Posts</h4>
+              <ol class="microposts pt-3">
+                <%= render @microposts %>
+              </ol>
+              <%= will_paginate @microposts %>
+            <% end %>
+        </div>
     </div>
   </div>
 </div>

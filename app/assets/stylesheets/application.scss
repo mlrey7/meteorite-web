@@ -200,3 +200,48 @@ input[type=submit] {
 .all-caps {
     letter-spacing: 0.05em;
 }
+
+.micropost-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: $dark;
+    margin: 0;
+}
+
+.micropost-handle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: $gray-light;
+    margin: 0;
+}
+
+
+.micropost-timestamp {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: $very-light-gray;
+    margin: 0;
+}
+
+.micropost-content {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.micropost-img {
+    max-width: 30px;
+    max-height: auto;
+}
+
+.microposts {
+    list-style: none;
+    padding: 0;
+}
