@@ -155,15 +155,18 @@ h4 {
     }
 }
 
+
 label {
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     color: $dark;
 }
 
 .accent-label {
     color: $gray-light;
+    font-style: normal;
+    font-weight: normal;
 }
 
 input::-webkit-input-placeholder,
