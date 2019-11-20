@@ -5,7 +5,7 @@
             <div class="d-flex">
                 <h5 class="micropost-name pr-1"> <%= link_to user.name, user_path(user), class: "micropost-name profile-link" %></h5>
                 <h5 class="micropost-handle pr-1"><%="@#{user.handle}"%></h5>
-                <% if current_user.id == @user.id %>
+                <% if current_user.id == @user.id && @user.following?(user) %>
                     <h6 class="pb-0 mb-0"><%= link_to "unfollow", relationship_url(current_user.active_relationships.find_by(followed_id: user.id).id), method: :delete, remote: true, class: "profile-link-accent" %> </h6>
                 <% end %>
             </div>
