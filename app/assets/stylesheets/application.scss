@@ -306,11 +306,20 @@ input[type=submit] {
     min-height: 120px;
 }
 
+.image-cropper {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
 .profile-img {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    max-height: auto;
-    max-width: 100px;
 }
 
 .microposts {
