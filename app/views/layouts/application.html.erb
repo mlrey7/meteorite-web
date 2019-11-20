@@ -20,21 +20,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse align-items-stretch" id="navbarSupportedContent">
-        <div class="ml-auto">
+        <div class="ml-auto nav-item">
           <%= link_to "Home", home_index_path, class: "nav-link" %>
         </div>
           <% if user_signed_in? %>
-            <div>
+            <div class="nav-item">
               <b> <%= link_to current_user.name, user_path(current_user), class: "nav-link" %></b>
             </div>
               <div>
                 <%= button_to "Sign Out", destroy_user_session_path, :method => "delete", :class => "btn btn-primary"  %>
               </div>
            <% else %>
-           <div>
+           <div class="nav-item">
            <%= button_to "Login", new_user_session_path, :method => "get", :class => "btn btn-primary mr-1" %>
            </div>
-              <div>
+              <div class="nav-item">
               <%= button_to "Sign up",  new_user_registration_path, :method => "get", :class => "btn btn-outline-primary" %>
               </div>
             <% end %>

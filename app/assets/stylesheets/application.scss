@@ -38,6 +38,10 @@ body {
     }
 }
 
+textarea {
+    resize: none;
+}
+
 .btn-outline-primary {
     color: $dark;
     font-weight: bold;
@@ -50,6 +54,11 @@ body {
         font-weight: bold;
         border: 2px solid $primary;
     }
+}
+
+.nav-item {
+    font-family: Roboto;
+    color: $dark;
 }
 
 .nav-item .btn {
@@ -123,7 +132,15 @@ h4 {
     font-weight: bold;
 }
 
-.navbar-light .navbar-nav {
+.nav-link {
+    color: $dark;
+
+    &:hover {
+        color: $dark;
+    }
+}
+
+.navbar-li ght .navbar-nav {
     .nav-link {
         color: $dark;
     }
