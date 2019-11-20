@@ -1,11 +1,14 @@
-<li id="micropost-<%= micropost.id %>">
+<li id="micropost-<%= micropost.id %>" class="pr-5">
     <div class="media">
         <%= image_tag "logo_stripped.png", class: "micropost-img"%>
-        <div class="media-body ml-3">
-            <div class="d-inline-flex">
+        <div class="media-body ml-3 w-100">
+            <div class="d-flex">
                 <h5 class="micropost-name pr-1"><%= micropost.user.name%></h5>
                 <h5 class="micropost-handle pr-1"><%="@#{micropost.user.handle}"%></h5>
-                <h5 class="micropost-timestamp"><%= time_ago_in_words(micropost.created_at) %></h5>
+                <h5 class="micropost-timestamp pr-2"><%= time_ago_in_words(micropost.created_at) %></h5>
+                <% if current_user.id == micropost.user.id %>
+                    <h6 class="pb-0 mb-0"><%= link_to "delete", micropost, method: :delete %> </h6>
+                <% end %>
             </div>
             <p class="micropost-content"><%= micropost.content %></p>
         </div>

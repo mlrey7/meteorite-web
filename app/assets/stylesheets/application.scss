@@ -210,6 +210,22 @@ input[type=submit] {
     margin: 0;
 }
 
+.profile-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: $dark;
+
+    &:hover {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: $dark;
+    }
+}
+
 .micropost-handle {
     font-family: Roboto;
     font-style: normal;
@@ -234,6 +250,7 @@ input[type=submit] {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    word-wrap: break-word;
 }
 
 .micropost-img {
@@ -244,4 +261,20 @@ input[type=submit] {
 .microposts {
     list-style: none;
     padding: 0;
+}
+
+.profile-posts-length {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: $dark;
+}
+
+.profile-posts-label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: $gray-light;
 }
