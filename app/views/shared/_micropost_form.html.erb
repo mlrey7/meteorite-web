@@ -1,6 +1,6 @@
 <%= form_for(@micropost, html: { multipart: true }) do |f| %>
   <div class="form-group">
-    <%= f.text_area :content, placeholder: "What's poppin'?", class: "form-control" %>
+    <%= f.text_area :content, placeholder: "What's poppin'?", class: "form-control micropost-text-area" %>
   </div>
   <div class="d-flex">
       <%= f.submit "Post", class: "btn btn-primary action-btn mr-2" %>

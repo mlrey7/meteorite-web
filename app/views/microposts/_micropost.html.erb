@@ -1,6 +1,6 @@
 <li id="micropost-<%= micropost.id %>" class="pr-5">
     <div class="media">
-        <%= image_tag "logo_stripped.png", class: "micropost-img"%>
+        <%= image_tag micropost.user.picture? ? micropost.user.picture.url : "logo_stripped.png", class: "micropost-img"%>
         <div class="media-body ml-3 w-100">
             <div class="d-flex">
                 <h5 class="micropost-name pr-1"> <%= link_to micropost.user.name, user_path(micropost.user), class: "micropost-name profile-link" %></h5>

@@ -6,7 +6,7 @@
       <div class="login-surface mt-3">
         <div class="row no-gutters">
             <div class="col-3">
-                <%= image_tag "logo_stripped.png", class: "w-75"%>
+                <%= image_tag @user.picture? ? @user.picture.url : "logo_stripped.png", class: "micropost-img"%>
             </div>
             <div class="col-9">
                 <h4 class="mb-0"><%= @user.name%></h4>

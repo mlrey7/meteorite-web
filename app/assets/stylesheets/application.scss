@@ -118,8 +118,9 @@ h4 {
     font-size: 24px;
 }
 
-.navbar-brand {
+.navbar-light .navbar-brand {
     font-weight: bold;
+    color: $dark;
 }
 
 .navbar-logo {
@@ -140,7 +141,7 @@ h4 {
     }
 }
 
-.navbar-li ght .navbar-nav {
+.navbar-light .navbar-nav {
     .nav-link {
         color: $dark;
     }
@@ -159,7 +160,7 @@ h4 {
     border-radius: 10px;
 }
 
-.bg-main {
+body {
     background-color: $primary-color-light;
 }
 
@@ -296,8 +297,19 @@ input[type=submit] {
 }
 
 .micropost-img {
-    max-width: 30px;
+    max-width: 50px;
     max-height: auto;
+    border-radius: 50%;
+}
+
+.micropost-text-area {
+    min-height: 120px;
+}
+
+.profile-img {
+    max-width: 100px;
+    max-height: auto;
+    border-radius: 50%;
 }
 
 .microposts {
