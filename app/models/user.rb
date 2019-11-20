@@ -13,25 +13,12 @@ class User < ApplicationRecord
   has_many :following, through: :active_relationships, source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
   
-  def get_posts
-    # active_following = Relationship.where(follower_id: self[:id])
-    ids = [self[:id]]
-    # active_following.each do |relation|
-    #   ids.push relation.followed_id 
-    # end
-    posts = Micropost.where user_id: ids
-    return posts
+  def feed
+        following_ids = "SELECT followed_id FROM relationships
+                     WHERE follower_id = :user_id"
+    Micropost.where("user_id IN (#{following_ids})
+                     OR user_id = :user_id", user_id: id)
   end
-
-  # def matched?(other_user)
-  #   following?(other_user) && other_user.following?(self)
-  # end
-
-  # def matches()
-  #   following.to_a.select do |rel|
-  #     User.find(rel.follow.id).following?(self)
-  #   end
-  # end
 
   def follow(other_user)
     active_relationships.create(followed_id: other_user.id)

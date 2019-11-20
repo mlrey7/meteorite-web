@@ -15,16 +15,7 @@
                 <span class="profile-posts-label"><%= "post".pluralize(@user.microposts.length)%></span>
             </div>
         </div>
-        <div class="row pt-2">
-            <div class="col-md-3">
-                <h4 class="mb-0"><%= @user.followers.count %></h4>
-                <h5 class="profile-posts-label">Followers</h5>
-            </div>
-            <div class="col-md-3">
-                <h4 class="mb-0"><%= @user.following.count %></h4>
-                <h5 class="profile-posts-label">Likes</h5>
-            </div>
-        </div>
+        <%= render 'follow_stats'%>
       </div>  
     </div>
         <div class="col-md-6 offset-md-2">

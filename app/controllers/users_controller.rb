@@ -4,10 +4,6 @@ class UsersController < ApplicationController
         @microposts = @user.microposts
     end
 
-    def feed
-        Micropost.where("user_id = ?", id)
-    end
-
     def following
         @title = "Following"
         @user = User.find(params[:id])

@@ -13,16 +13,7 @@
                 <span class="profile-posts-label"><%= "post".pluralize(current_user.microposts.length)%></span>
             </div>
         </div>
-        <div class="row pt-2">
-            <div class="col-md-3">
-                <h4 class="mb-0"><%= current_user.followers.count %></h4>
-                <h5 class="profile-posts-label"><%= link_to "Followers", followers_user_path(current_user), class: "profile-link-accent" %></h5>
-            </div>
-            <div class="col-md-3">
-                <h4 class="mb-0"><%= current_user.following.count %></h4>
-                <h5 class="profile-posts-label"><%= link_to "Following", following_user_path(current_user), class: "profile-link-accent" %></h5>
-            </div>
-        </div>
+        <%= render 'users/follow_stats'%>
         <% if user_signed_in? %>
             <div class="row">
                 <aside class="col-md">
@@ -37,7 +28,13 @@
     </div>
     <div class="col-md-6 offset-md-2">
         <div class="login-surface mt-3">
-            <h4>Posts by you and your matches</h4>
+            <% if @type == :selected %>
+                <span class="h4-reg pr-2">Posts by you and your followers</span>
+                <span><%= link_to "View all posts", home_all_path, class: "micropost-name profile-link" %></span>
+            <% elsif @type == :all %>
+                <span class="h4-reg pr-2">Posts by everyone</span>
+                <span><%= link_to "View posts from your followers only", home_index_path, class: "micropost-name profile-link" %></span>
+            <% end %>
             <%= render 'shared/feed' %>
         </div>
     </div>

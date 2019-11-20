@@ -1,0 +1,10 @@
+<div class="row pt-2">
+    <div class="col-md-3">
+        <h4 class="mb-0"><%= current_user.followers.count %></h4>
+        <h5 class="profile-posts-label"><%= link_to "Followers", followers_user_path(current_user), class: "profile-link-accent" %></h5>
+    </div>
+    <div class="col-md-3">
+        <h4 class="mb-0"><%= current_user.following.count %></h4>
+        <h5 class="profile-posts-label"><%= link_to "Following", following_user_path(current_user), class: "profile-link-accent" %></h5>
+    </div>
+</div>
