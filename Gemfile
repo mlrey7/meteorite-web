@@ -25,7 +25,7 @@ gem 'faker'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'fog'
+gem 'fog-aws'
 gem 'figaro'
 
 # Use Redis adapter to run Action Cable in production
