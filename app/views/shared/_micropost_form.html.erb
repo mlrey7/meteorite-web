@@ -2,10 +2,16 @@
   <div class="form-group">
     <%= f.text_area :content, placeholder: "What's poppin'?", class: "form-control" %>
   </div>
-  <%= f.submit "Post", class: "btn btn-primary action-btn" %>
+  <div class="d-flex">
+      <%= f.submit "Post", class: "btn btn-primary action-btn mr-2" %>
   <span class="picture">
-    <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+  <label for="micropost_picture" class="custom-file-upload">
+             <span class="oi oi-image" title="image" aria-hidden="true"></span> Upload Pic
+  </label>
+  <input accept="image/jpeg,image/gif,image/png" type="file" name="micropost[picture]" id="micropost_picture"/>
   </span>
+  </div>
+
 <% end %>
 
 <script type="text/javascript">

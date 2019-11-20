@@ -1,5 +1,6 @@
 @import "_custom";
 @import "bootstrap";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css");
 
 html,
 body {
@@ -27,13 +28,13 @@ body {
     background-color: $primary;
     border: none;
     color: $dark;
-    box-sizing: border-box;
     border-radius: 4px;
+    border: 2px solid $primary;
 
     &:hover {
         color: $dark;
         background-color: $primary;
-        border: none;
+        border: 2px solid $primary;
     }
 }
 
@@ -41,7 +42,6 @@ body {
     color: $dark;
     font-weight: bold;
     border: 2px solid $primary;
-    box-sizing: border-box;
     border-radius: 4px;
 
     &:hover {
@@ -302,4 +302,17 @@ input[type=submit] {
     font-weight: normal;
     font-size: 18px;
     color: $gray-light;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid $dark;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 0px;
 }

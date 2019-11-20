@@ -1,6 +1,6 @@
 <div class="container-fluid bg-main h-100">
   <div class="row h-100">
-    <div class="col-md-3 offset-md-1">
+    <div class="col-md-3 offset-md-2">
       <div class="login-surface mt-3">
         <div class="row no-gutters">
             <div class="col-3">
@@ -18,10 +18,10 @@
         <% end %>
       </div>  
     </div>
-        <div class="col-md-6 offset-md-2">
+        <div class="col-md-6">
           <div class="login-surface mt-3">
             <% if @user.microposts.any? %>
-              <h4>Posts</h4>
+              <span class="h4-reg pr-2"><%= "#{@user.name}'s posts" %></span>
               <ol class="microposts pt-3">
                 <%= render @microposts %>
               </ol>
