@@ -2,15 +2,25 @@
   <div class="row">
     <div class="col-md-3 offset-md-1">
       <div class="login-surface mt-3">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-3">
-                <%= image_tag "logo_stripped.png", class: "navbar-logo"%>
+                <%= image_tag "logo_stripped.png", class: "w-75"%>
             </div>
             <div class="col-9">
                 <h4 class="mb-0"><%= current_user.name%></h4>
                 <h5 class="mb-0"><%= link_to "View my profile", current_user, class: "profile-link"%></h5>
                 <span class="profile-posts-length"><%= current_user.microposts.length%></span>
                 <span class="profile-posts-label"><%= "post".pluralize(current_user.microposts.length)%></span>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="col-md-3">
+                <h4 class="mb-0"><%= current_user.followers.count %></h4>
+                <h5 class="profile-posts-label"><%= link_to "Followers", followers_user_path(current_user), class: "profile-link-accent" %></h5>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mb-0"><%= current_user.following.count %></h4>
+                <h5 class="profile-posts-label"><%= link_to "Following", following_user_path(current_user), class: "profile-link-accent" %></h5>
             </div>
         </div>
         <% if user_signed_in? %>

@@ -226,6 +226,23 @@ input[type=submit] {
     }
 }
 
+.profile-link-accent {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: $gray-light;
+
+    &:hover {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: $gray-light;
+    }
+}
+
+
 .micropost-handle {
     font-family: Roboto;
     font-style: normal;

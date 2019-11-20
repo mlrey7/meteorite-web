@@ -1,3 +1,5 @@
+<% provide(:title, @title) %>
+
 <div class="container-fluid bg-main h-100">
   <div class="row h-100">
     <div class="col-md-3 offset-md-1">
@@ -8,8 +10,9 @@
             </div>
             <div class="col-9">
                 <h4 class="mb-0"><%= @user.name%></h4>
-                <span class="profile-posts-length"><%= @user.microposts.count %></span>
-                <span class="profile-posts-label"><%= "post".pluralize(@user.microposts.count)%></span>
+                <h5 class="mb-0"><%= link_to "View my profile", current_user, class: "profile-link"%></h5>
+                <span class="profile-posts-length"><%= @user.microposts.length%></span>
+                <span class="profile-posts-label"><%= "post".pluralize(@user.microposts.length)%></span>
             </div>
         </div>
         <div class="row pt-2">
@@ -19,21 +22,18 @@
             </div>
             <div class="col-md-3">
                 <h4 class="mb-0"><%= @user.following.count %></h4>
-                <h5 class="profile-posts-label">Following</h5>
+                <h5 class="profile-posts-label">Likes</h5>
             </div>
         </div>
-        <% if @user.id != current_user.id %>
-           <%= render 'follow_form' if signed_in? %>
-        <% end %>
       </div>  
     </div>
         <div class="col-md-6 offset-md-2">
           <div class="login-surface mt-3">
-            <% if @user.microposts.any? %>
-              <h4>Posts</h4>
-              <ol class="microposts pt-3">
-                <%= render @microposts %>
-              </ol>
+            <h4><%= @title %></h4>
+            <% if @users.any? %>
+              <ul class="microposts pt-3">
+                <%= render @users %>
+              </ul>
             <% end %>
         </div>
     </div>
