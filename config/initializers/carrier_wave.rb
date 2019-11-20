@@ -1,5 +1,8 @@
+require 'fog/aws'
+
 if Rails.env.production?
   CarrierWave.configure do |config|
+    config.fog_provider = 'fog/aws'
     config.fog_credentials = {
       provider:              'AWS',                        # required
       aws_access_key_id:     ENV['S3_ACCESS_KEY'],                        # required unless using use_iam_profile
@@ -10,5 +13,6 @@ if Rails.env.production?
     config.fog_directory  = 'meteorite-web'                                      # required
     config.fog_public     = false                                                 # optional, defaults to true
     config.fog_attributes = { cache_control: "public, max-age=#{365.days.to_i}" } # optional, defaults to {}
+    
   end
 end
