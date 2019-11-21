@@ -81,6 +81,6 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: myapp_production
-  username: myapp
+  database: meteorite_web_production
+  username: meteorite_web
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>

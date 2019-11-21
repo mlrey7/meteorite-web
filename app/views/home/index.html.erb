@@ -1,9 +1,9 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-3 offset-md-2">
+    <div class="col-lg-3 offset-lg-2">
       <div class="login-surface mt-3">
         <div class="row">
-            <div class="col-md">
+            <div class="col-lg">
               <div class="media">
                 <%= image_tag current_user.picture? ? current_user.picture.url : "logo_stripped.png", class: "profile-img"%>
                 <div class="media-body ml-3 w-100">
@@ -26,7 +26,7 @@
         <%= render 'users/follow_stats'%>
         <% if user_signed_in? %>
             <div class="row">
-                <aside class="col-md">
+                <aside class="col-lg">
                     <section class="micropost_form">
                         <%= render 'shared/micropost_form' %>
                     </section>
@@ -36,7 +36,7 @@
         <% end %>
       </div>
     </div>
-    <div class="col-md-6 offset-md">
+    <div class="col-lg-6 offset-lg">
         <div class="login-surface mt-3">
             <% if @type == :selected %>
                 <span class="h4-reg pr-2">Posts by you and your followers</span>

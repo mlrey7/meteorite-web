@@ -1,4 +1,4 @@
-<li id="micropost-<%= micropost.id %>" class="pr-5">
+<li id="micropost-<%= micropost.id %>" class="">
     <div class="media">
         <%= image_tag micropost.user.picture? ? micropost.user.picture.url : "logo_stripped.png", class: "micropost-img"%>
         <div class="media-body ml-3 w-100">
@@ -11,7 +11,7 @@
                 <% end %>
             </div>
             <p class="micropost-content"><%= micropost.content %></p>
-            <%= image_tag micropost.picture.url, class: "pb-5" if micropost.picture? %>
+            <%= image_tag micropost.picture.url, class: "img-fluid pb-5" if micropost.picture? %>
         </div>
     </div>
 </li>
