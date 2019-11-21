@@ -5,22 +5,22 @@ class MicropostsController < ApplicationController
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
       flash[:success] = "Micropost created!"
-      redirect_to home_index_path
+      redirect_back(fallback_location: home_index_path)
     else
       @feed_items = []
-      redirect_to home_index_path
+      redirect_back(fallback_location: home_index_path)
     end
   end
 
   def destroy
     @micropost.destroy
     flash[:success] = "Micropost deleted"
-    redirect_to request.referrer || home_index_path
+    redirect_back(fallback_location: home_index_path)
   end
 
   private
     def micropost_params
-            params.require(:micropost).permit(:content, :picture)
+      params.require(:micropost).permit(:content, :picture)
     end
 
     def correct_user
