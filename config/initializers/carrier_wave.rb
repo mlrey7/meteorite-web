@@ -13,6 +13,6 @@ if Rails.env.production?
     config.fog_directory  = 'meteorite-web'                                      # required
     config.fog_public     = false                                                 # optional, defaults to true
     config.fog_attributes = { cache_control: "public, max-age=#{365.days.to_i}" } # optional, defaults to {}
-    
+    config.asset_host = ENV['CLOUDFRONT_ENDPOINT']
   end
 end
