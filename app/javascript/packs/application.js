@@ -8,6 +8,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+import "bootstrap";
+import "../stylesheets/application";
 //= require jquery3
 //= require popper
 //= require bootstrap

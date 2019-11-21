@@ -1,11 +1,11 @@
 <% provide(:title, @title) %>
 
-<div class="container-fluid bg-main h-100">
-  <div class="row h-100">
-    <div class="col-md-3 offset-md-2">
-      <div class="login-surface mt-3">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-4 offset-xl-1 col-8 offset-2">
+      <div class="login-surface mt-3 p-5">
         <div class="row">
-          <div class="col-md">
+          <div class="col">
               <div class="media">
                 <%= image_tag @user.picture? ? @user.picture.url : "logo_stripped.png", class: "profile-img"%>
                 <div class="media-body ml-3 w-100">
@@ -28,7 +28,7 @@
         <%= render 'follow_stats'%>
       </div>  
     </div>
-        <div class="col-md-6">
+        <div class="col-xl-6 offset-xl-0 col-8 offset-2">
           <div class="login-surface mt-3">
           <span class="h4-reg pr-2"><%= @title %></span>
             <% if @users.any? %>
