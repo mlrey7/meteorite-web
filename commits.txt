@@ -1,0 +1,229 @@
+commit c5f4eaaf1fface91f1c31e70d95edd3759a2bba9
+Author: Matthew Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 16:42:34 2019 +0800
+
+    Changes
+
+commit 2a4a7acbccd5255104c724c2d2a3fed8674b85d8
+Author: Matthew Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 16:35:25 2019 +0800
+
+    fog public
+
+commit 8f74faeb4623cb9adf4d1e90226088e867e9b139
+Author: Matthew Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 16:18:32 2019 +0800
+
+    Added CDN
+
+commit 1fd456e1b78669ae7b68f813bd94cd740e2dff67
+Author: Matthew Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 14:01:03 2019 +0800
+
+    added routes.txt for easy coding
+
+commit 6feb52d480f91ff6c773f2219ddc047d3113b7e9
+Author: Matthew Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 12:14:46 2019 +0800
+
+    Fixed js and jquery support
+
+commit 1cbe5cfc0ebabff771ce09b3584643c51348c43b
+Author: Matthew Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 11:21:36 2019 +0800
+
+    redirect back
+
+commit 85d6f1b563e4e59a5dbce2fc81a99f27a16b6948
+Author: Matthew Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 10:54:31 2019 +0800
+
+    db yml change
+
+commit d3274ea96bc787f8014d382a99d23fe088132f00
+Author: Matthew Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 10:13:33 2019 +0800
+
+    Changes to md
+    Split database to sqlite3 for dev & test and postgres for prod
+    remove unnecessary gems
+
+commit 4cacbb8243f38c7c9b556c1950559b4ec366f766
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 06:13:32 2019 +0800
+
+    rounded
+
+commit ec6b31dadeda32e575869589c8a4ea545d6d0856
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 05:48:25 2019 +0800
+
+    Rounded images
+
+commit 51ee66fc845ca9f9134e5353b7d77f21f66766f6
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 05:39:21 2019 +0800
+
+    iam
+
+commit c99f9b79b87aeab83acf22dfd9f57a94121635aa
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 05:31:16 2019 +0800
+
+    Web concurrency
+
+commit 395322d9be11a905afa91abff3c3ab3d98424ad9
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 05:16:24 2019 +0800
+
+    fogaws
+
+commit d2877b7c4914940d0b8bc3bfe4c4af607b0d6fd0
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 05:13:51 2019 +0800
+
+    fog
+
+commit b814e4e09e4e2a81fe3bafdf1d8e2142cdebec26
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Thu Nov 21 05:09:27 2019 +0800
+
+    Changes
+
+commit f40827066677c4c436f659841b31a5b6821d94d6
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 23:57:43 2019 +0800
+
+    aws configs
+
+commit d1370727a30bf4617e001ba8ee20642e930e1821
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 23:29:57 2019 +0800
+
+    picture size remove
+
+commit 1c5ca545b0ebd8f05e406975eaa9b89b27099586
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 23:26:14 2019 +0800
+
+    Procfile
+
+commit f7526ec2dfa05de802b9cc3de5bb92ec54acb2d2
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 23:13:56 2019 +0800
+
+    Env
+
+commit cb3bce37ccb1b4e00e4d1e4d1a1bec40d769d706
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 18:08:01 2019 +0800
+
+    ajax follow_unfollow
+
+commit 7b142ece454fbf9a81601e2327ff801d5c8053c5
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 17:36:29 2019 +0800
+
+    Changes
+
+commit 89c48672c797bbca83f4e9361be9f6907c127498
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 16:51:24 2019 +0800
+
+    More Layout changes
+
+commit d737b52bbca09fa790e6b22eb78a51fe7ee1abe8
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 15:59:10 2019 +0800
+
+    Nav format
+
+commit 4fa6d5488b555969cde6c3bd0d86336b05f1e645
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 15:41:01 2019 +0800
+
+    Css changes
+
+commit 7167bd32d23c26821470df9446fe1d91a58c71b3
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 14:45:21 2019 +0800
+
+    Feed
+
+commit 74dc1b04c02480e579df0eb11cc7950de3977274
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 13:11:17 2019 +0800
+
+    Follower following
+
+commit 37c8b840ae4463e4c149e4f0cffcb1dcd8d4d655
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 09:37:11 2019 +0800
+
+    Fixed
+
+commit 1e87d501c4d9c487ce94681658c3aab47417f8db
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 09:14:56 2019 +0800
+
+    Preparing for herokuu
+
+commit 613c7c8637ac56611de2e4dc36c381ad60dd982b
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 08:36:48 2019 +0800
+
+    Microposts feed
+
+commit e175a380cf8d08880a15c5b0d5feff5d0d674371
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Wed Nov 20 06:23:19 2019 +0800
+
+    Microposts feed at user show
+
+commit e73125fea720bafb6e2a30549dd8a5c7281ae2a7
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Tue Nov 19 22:59:19 2019 +0800
+
+    Added microposts model
+
+commit 94a0eea9e002c8a7ca66de6a2ab65cba190c2382
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Tue Nov 19 22:54:22 2019 +0800
+
+    User routes
+
+commit 4aed43c227fe42725f34a25b48b85b7ddfcb7d6e
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Tue Nov 19 22:17:58 2019 +0800
+
+    Begin home
+
+commit 5487a616726ddec654a6243e28725dda262312b6
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Tue Nov 19 22:11:31 2019 +0800
+
+    Register
+
+commit 81d59b973a228076a10413f346f780c4739f9cb1
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Tue Nov 19 21:59:27 2019 +0800
+
+    Logo
+
+commit 80732f4479d6a9db88c20e30b726a4c3b13fb531
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Tue Nov 19 20:51:25 2019 +0800
+
+    Login Screen
+
+commit b8a66c31fbf9a7c4faa76671387ff8349178e77a
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Tue Nov 19 18:53:13 2019 +0800
+
+    Added User and Devise and preliminary welcome screen
+
+commit 9b394c4ffe1664a11205413ef89fd8434161a8c3
+Author: Matthew Lemuel M Rey <matthewlemuelr@gmail.com>
+Date:   Tue Nov 19 18:30:17 2019 +0800
+
+    Initial Commit

@@ -1,6 +1,6 @@
 <div class="row pt-2">
     <div class="col-3">
-        <h4 class="mb-0"><%= @user.followers.count %></h4>
+        <h4 class="mb-0" id="followers"><%= @user.followers.count %></h4>
         <h5 class="profile-posts-label"><%= link_to "Followers", followers_user_path(@user), class: "profile-link-accent" %></h5>
     </div>
     <div class="col-3">
