@@ -6,6 +6,18 @@ class HomeController < ApplicationController
       @type = :selected
       @micropost = current_user.microposts.build
       @feed_items = current_user.feed
+
+      prev = Rails.application.routes.recognize_path(request.referrer)
+      action = prev[:action]
+      if action == "all"
+        respond_to do |format|
+          format.js
+          format.html
+        end
+      else
+        render :index
+      end
+      
     end 
   end
 
@@ -15,7 +27,17 @@ class HomeController < ApplicationController
       @type = :all
       @micropost = current_user.microposts.build
       @feed_items = Micropost.all
-      render :index
+
+      prev = Rails.application.routes.recognize_path(request.referrer)
+      action = prev[:action]
+      if action == "index"
+        respond_to do |format|
+          format.js
+          format.html
+        end 
+      else
+        render :all
+      end
     end
   end
 

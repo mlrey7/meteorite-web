@@ -1,0 +1,15 @@
+<script type="text/javascript">
+<% if @type == :selected %>
+alert('asel')
+    all_feed = document.querySelector('#all_posts')
+    all_feed.addEventListener('click', function() {
+    history.pushState({type: 'all'}, '', '/home/all')
+    })
+<% elsif @type == :all %>
+alert('allf')
+    index_feed = document.querySelector('#followers-only-posts')
+    index_feed.addEventListener('click', function() {
+        history.pushState({type: 'index'}, '', '/home/index')
+    })
+<% end %>
+</script>
