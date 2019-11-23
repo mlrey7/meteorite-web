@@ -22,6 +22,7 @@ class HomeController < ApplicationController
   end
 
   def all 
+
     if user_signed_in?
       @user = current_user
       @type = :all
