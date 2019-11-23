@@ -1,0 +1,28 @@
+= extends :application do
+  .container-fluid
+    .row
+      .col-xl-4.offset-xl-1.col-8.offset-2
+        .login-surface.mt-3.p-5
+          .row
+            .col
+              .media
+                = image_tag current_user.picture? ? current_user.picture.url : "logo_stripped.png", class: "profile-img"
+                .media-body.ml-3.w-100
+                  .d-flex.flex-column
+                    %div
+                      %h4.mb-0= current_user.name
+                    %div
+                      %h5.mb-0= link_to "View my profile", current_user, class: "profile-link"
+                    %div
+                      %span.profile-posts-length= current_user.microposts.count
+                      %span.profile-posts-label= "post".pluralize(current_user.microposts.count)
+          = render 'users/follow_stats'
+          - if user_signed_in?
+            .row
+              %aside.col-lg
+                %section.micropost_form
+                  = render 'shared/micropost_form'
+          - else
+      .col-xl-6.offset-xl-0.col-8.offset-2
+        .login-surface.mt-3.feed-holder
+          = yield

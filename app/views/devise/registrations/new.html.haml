@@ -1,0 +1,40 @@
+.container-fluid
+  .row
+    .col-lg-6.offset-lg-3.col-8.offset-2
+      .login-surface.mt-3
+        .d-flex.flex-column.p-5
+          .pb-3
+            %h4 Create your account
+          = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { multipart: true }) do |f|
+            = render "devise/shared/error_messages", resource: resource
+            .form-group
+              = f.label :email
+              %br/
+              = f.email_field :email, placeholder: "JohnDoe@example.com", autofocus: true, autocomplete: "email", class: "form-control"
+            .form-group
+              = f.label :name
+              %br/
+              = f.text_field :name, placeholder: "John Doe", autofocus: true, autocomplete: "John Doe", class: "form-control"
+            .form-group
+              = f.label :handle
+              %br/
+              = f.text_field :handle, placeholder: "@JohnDoe", autofocus: true, autocomplete: "@JohnDoe", class: "form-control"
+            .form-group
+              = f.label :password
+              - if @minimum_password_length
+                %em
+                  (#{@minimum_password_length} characters minimum)
+              %br/
+              = f.password_field :password, placeholder: "Password", autocomplete: "new-password", class: "form-control"
+            .form-group
+              = f.label :password_confirmation
+              %br/
+              = f.password_field :password_confirmation, placeholder: "Password", autocomplete: "new-password", class: "form-control"
+            .form-group
+              %span.picture
+                %label.custom-file-upload{:for => "user_picture"}
+                  %span.oi.oi-image{"aria-hidden" => "true", :title => "image"}
+                  Upload Pic
+                %input#user_picture{:accept => "image/jpeg,image/gif,image/png", :name => "user[picture]", :type => "file"}/
+            .actions
+              = f.submit "Sign up", class: "btn btn-primary action-btn px-5"

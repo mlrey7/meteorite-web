@@ -1,0 +1,12 @@
+:javascript
+  <haml_silent>     if @type == :selected 
+  </haml_silent><haml_block>        all_feed = document.querySelector('#all-posts')
+          all_feed.addEventListener('click', function() {
+          history.pushState({type: 'all'}, '', '/home/all')
+          })
+  </haml_block><haml_silent>     elsif @type == :all 
+  </haml_silent><haml_block>        index_feed = document.querySelector('#followers-only-posts')
+          index_feed.addEventListener('click', function() {
+          history.pushState({type: 'all'}, '', '/home/index')
+          })
+  </haml_block>

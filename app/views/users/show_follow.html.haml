@@ -1,0 +1,25 @@
+- provide(:title, @title)
+.container-fluid
+  .row
+    .col-xl-4.offset-xl-1.col-8.offset-2
+      .login-surface.mt-3.p-5
+        .row
+          .col
+            .media
+              = image_tag @user.picture? ? @user.picture.url : "logo_stripped.png", class: "profile-img"
+              .media-body.ml-3.w-100
+                .d-flex.flex-column
+                  %div
+                    %h4.mb-0= @user.name
+                  %div
+                    %h5.mb-0= link_to "View my profile", current_user, class: "profile-link"
+                  %div
+                    %span.profile-posts-length= @user.microposts.count
+                    %span.profile-posts-label= "post".pluralize(@user.microposts.count)
+        = render 'follow_stats'
+    .col-xl-6.offset-xl-0.col-8.offset-2
+      .login-surface.mt-3
+        %span.h4-reg.pr-2= @title
+        - if @users.any?
+          %ul.microposts.pt-3
+            = render @users

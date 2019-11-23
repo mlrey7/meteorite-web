@@ -1,0 +1,18 @@
+.container-fluid.bg-main.h-100
+  .row
+    .col-lg-6.col-sm-8.offset-lg-3.offset-sm-2
+      .login-surface.mt-3
+        .d-flex.flex-column.p-5
+          .pb-3
+            %h4 Forgot your password?
+          = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+            .form-group
+              = f.label :email
+              %br/
+              = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"
+            .form-group
+              = f.submit "Send me reset password instructions", class: "btn btn-primary action-btn"
+            .form-group
+              = link_to "Login", new_user_session_path, class: "text-link"
+              %br/
+              = link_to "Sign up", new_user_registration_path, class: "text-link"

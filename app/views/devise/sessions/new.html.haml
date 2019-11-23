@@ -1,0 +1,29 @@
+.container-fluid
+  .row
+    .col-lg-6.offset-lg-3.col-8.offset-2
+      .login-surface.mt-3
+        .d-flex.flex-column.p-5
+          .pb-3
+            %h4 Login to meteorite
+          = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+            .form-group
+              = f.label :email
+              %br/
+              = f.email_field :email, placeholder: "JohnDoe@example.com", autofocus: true, autocomplete: "email", class: "form-control"
+            .form-group
+              = f.label :password
+              %br/
+              = f.password_field :password, placeholder: "Password", autocomplete: "current-password", class: "form-control"
+            .d-flex.align-items-baseline.pb-2
+              .pr-3
+                = f.submit "Log in", class: "btn btn-primary action-btn px-5"
+              - if devise_mapping.rememberable?
+                .pr-2
+                  = f.check_box :remember_me
+                  = f.label :remember_me, class: "accent-label"
+              = link_to "Forgot your password?", new_user_password_path, class: "text-link"
+            .d-flex.align-items-baseline
+              .pr-2
+                %label.accent-label Don't have an account?
+              %div
+                = link_to "Sign up now", new_user_registration_path, class: "text-link"

@@ -1,0 +1,7 @@
+feed = document.querySelector('.feed-holder')
+feed.innerHTML = "#{escape_javascript(render('home/feed', locals: {type: @type}))}"
+
+all_feed = document.querySelector('#all-posts')
+all_feed.addEventListener('click', function() {
+history.pushState({type: 'all'}, '', '/home/all')
+})

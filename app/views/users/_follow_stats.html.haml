@@ -1,0 +1,7 @@
+.row.pt-2
+  .col-3
+    %h4#followers.mb-0= @user.followers.count
+    %h5.profile-posts-label= link_to "Followers", followers_user_path(@user), class: "profile-link-accent"
+  .col-3
+    %h4.mb-0= @user.following.count
+    %h5.profile-posts-label= link_to "Following", following_user_path(@user), class: "profile-link-accent"
