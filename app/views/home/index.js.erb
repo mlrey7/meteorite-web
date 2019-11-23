@@ -1,6 +1,6 @@
 
 feed = document.querySelector('.feed-holder')
-feed.innerHTML = "<%= escape_javascript(render('home/index_feed'))%>"
+feed.innerHTML = "<%= escape_javascript(render('home/index_feed', locals: {type: @type}))%>"
 
 
 all_feed = document.querySelector('#all-posts')
