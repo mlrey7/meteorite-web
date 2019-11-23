@@ -1,5 +1,8 @@
+
+
 feed = document.querySelector('.feed-holder')
 feed.innerHTML = "<%= escape_javascript(render('home/all_feed'))%>"
+
 
 index_feed = document.querySelector('#followers-only-posts')
 index_feed.addEventListener('click', function() {
